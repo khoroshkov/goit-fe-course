@@ -1,0 +1,231 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+
+
+.wraper {
+    min-height: 540px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), 
+                    url(../img/Background_photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+
+.menu-button {
+    width: 90px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.logo img {
+    margin: auto;
+}
+
+.text-wraper {
+    align-items: center;
+    min-height: 200px;
+}
+
+.header-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.header-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.search-button {
+    width: 280px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
+}
+
+
+/* main section */
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.partner-item {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 18px auto 18px auto;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.tv-icon {
+    background-color: rgb(255, 0, 0);
+    background-image: url("../img/TV-icon.png");
+}
+
+.glass-icon {
+    background-color: rgb(255, 165, 7);
+    background-image: url("../img/Glass-icon.png");
+}
+
+.cup-icon {
+    background-color: rgb(28, 215, 173);
+    background-image: url("../img/Cup-icon.png");
+}
+
+.telegram-icon {
+    background-color: rgb(78, 115, 219);
+    background-image: url("../img/Telegram-icon.png");
+}
+
+.partner-item a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.partner-name {
+    margin-bottom: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.partner-info {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(167, 167, 167);
+}
+
+.search-button-bottom {
+    display: block;
+    margin: 0 auto 60px auto;
+    width: 280px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 78, 80);
+    color: rgb(255, 78, 80);
+    background-color: transparent;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 492px;
+        max-width: 940px;
+    }
+
+    .header-wraper {
+        margin-bottom: 40px;
+    }
+
+    .search-button {
+        width: 228px;
+    }
+
+    .search-button-bottom {
+        width: 194px;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .header-title {
+        font-size: 50px;
+    }
+
+    .header-text {
+        font-size: 24px;
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .header-wraper {
+        max-width: 940px;
+    }
+
+    .login-menu button {
+        cursor: pointer;
+    }
+
+    .search-button,
+    .search-button-bottom,
+    .social-icon {
+        cursor: pointer;
+    }
+}
