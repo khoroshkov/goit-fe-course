@@ -1,0 +1,10 @@
+.page-nav {
+  @include flex-center('space-b');
+  min-height: 100px;
+  margin-bottom: 120px;
+}
+
+.site-navigation {
+  @include flex-center('space-b');
+  min-width: 620px;
+}

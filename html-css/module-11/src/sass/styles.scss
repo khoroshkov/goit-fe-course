@@ -1,0 +1,22 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './helpers/placeholder';
+@import './helpers/mixins.scss';
+@import './normalize';
+@import './base';
+
+// components
+
+@import './components/list';
+@import './components/container';
+@import './components/page-header';
+@import './components/page-nav';
+@import './components/site-navigation';
+@import './components/header-text';
+@import './components/services';
+@import './components/team-section';
+@import './components/hover-card';
+@import './components/socials';
+@import './components/footer';

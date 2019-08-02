@@ -1,0 +1,80 @@
+.services {
+  margin-bottom: 90px;
+}
+
+.section-title::after {
+  @include pseudo($display: block);
+  width: 60px;
+  height: 3px;
+  background-color: $secondary-accent-color;
+  margin: 40px auto;
+}
+
+.services__list a {
+  text-decoration: none;
+  color: $primary-dark-color;
+}
+
+.sirvices__item {
+  flex-basis: 380px;
+  min-height: 120px;
+  position: relative;
+  padding-left: 60px;
+  list-style: none;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 100px;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 32px;
+    width: 32px;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.clock-icon::before {
+  background-image: url('../images/icon-alarm-clock.svg');
+}
+
+.line-graph-icon::before {
+  background-image: url('../images/icon-line-graph.svg');
+}
+
+.computer-icon::before {
+  background-image: url('../images/icon-comp.svg');
+}
+
+.book-icon::before {
+  background-image: url('../images/icon-book.svg');
+}
+
+.home-icon::before {
+  background-image: url('../images/icon-home.svg');
+}
+
+.digital-icon::before {
+  background-image: url('../images/icon-image.svg');
+}
+
+.sirvices__item-description,
+.section-about {
+  font-family: $main-font-text;
+  font-size: $main-text-size;
+  font-weight: 400;
+  color: $primary-text-color;
+}
+
+.sirvices__item-title {
+  font-family: $main-font-title;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}

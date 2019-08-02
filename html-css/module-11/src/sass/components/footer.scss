@@ -1,0 +1,47 @@
+.main-footer {
+  @include flex-center('space-b');
+  min-height: 64px;
+  line-height: 64px;
+  padding-bottom: 40px;
+  font-size: 0;
+
+  &::before {
+    @include pseudo($display: block);
+    width: 100%;
+    height: 1px;
+    background-color: $primary-text-color;
+    margin-bottom: 14px;
+  }
+}
+
+.legal-info {
+  font-family: $main-font-title;
+  font-size: $secondary-text-size;
+  font-weight: 400;
+}
+
+.legal-info a {
+  color: $primary-warning-color;
+  text-decoration: none;
+}
+
+.subscribe-button {
+  @extend %btn;
+  width: 150px;
+  font-weight: 700;
+  border: 0;
+  background-color: $main-button-color;
+}
+
+.email-field {
+  width: 230px;
+  height: 39px;
+  font-family: $main-font-text;
+  font-size: $main-text-size;
+  font-weight: 300;
+  font-style: italic;
+  color: $primary-text-color;
+  border: 1px solid $primary-text-color;
+  border-right: none;
+  padding-left: 10px;
+}

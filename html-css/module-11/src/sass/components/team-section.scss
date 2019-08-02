@@ -1,0 +1,47 @@
+.section-about {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.team__list {
+  @extend %list;
+  margin-bottom: 80px;
+}
+
+.team__list-item {
+  position: relative;
+}
+
+.team__list-item:hover .team__list-item--hovered {
+  opacity: 1;
+  box-shadow: 10px 10px 0px 0 rgba(149, 225, 211, 0.76);
+  transform: translate(-10px, -10px);
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+
+.team__list-item:hover img {
+  transform: translate(-10px, -10px);
+}
+
+.team__list-item-name,
+.team__list-item-position {
+  text-align: center;
+}
+
+.team__list-item-name {
+  font-family: $main-font-title;
+  font-size: $secondary-text-size;
+  font-weight: 400;
+  line-height: 25pt;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+.team__list-item-position {
+  font-family: $main-font-text;
+  font-size: $secondary-text-size;
+  font-style: italic;
+  font-weight: 100;
+  color: $primary-text-color;
+}

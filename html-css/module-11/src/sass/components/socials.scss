@@ -1,0 +1,37 @@
+.socials {
+  position: absolute;
+  top: 195px;
+  left: 80px;
+}
+
+.socials__item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1px;
+  }
+}
+
+.socials__button {
+  background-color: $primary-accent-color;
+  border: none;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.socials__button svg {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  fill: $secondary-accent-color;
+}
+
+.socials__button:hover {
+  background-color: $secondary-accent-color;
+}
+
+.socials__button:hover svg {
+  fill: $primary-white-color;
+}
